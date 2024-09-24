@@ -134,8 +134,11 @@ class pr003 {
                 }
 
 		//Бесконечный цикл:
-		//System.out.println("\n");
-		//for (;;);
+		System.out.println("\n");
+		for (;;){
+			ch = (char) System.in.read();
+			if(ch == 'q') break;
+		}
 		
 		System.out.println("\n");
 		int sum = 0;
@@ -175,7 +178,31 @@ class pr003 {
 				ignore = (char) System.in.read();
 			} while (ignore != '\n');
 		} while(ch != 'q');
+		
+		//Оператор break
+		System.out.println("\n");
 
+                for (x1 = 100; x1 > -100; x1 -= 5) {
+                        System.out.println(x1);
+			if (x1 == 50) break; //прекращаем выполнение цикла
+		}
+
+                System.out.println("\n");
+		
+		//break с вложенными циклами
+		for (int i9=0; i9<3; i9++) {
+			System.out.println("Счетчик внешнего цикла: " + i9);
+			System.out.print("Счетчик внутреннего цикла: ");
+			int t = 0;
+		
+			while (t < 100) {
+				if(t==10) break;
+				System.out.print(t + " ");
+				t++;
+			}
+			System.out.println("Циклы закончились");
+
+		}
 	}
 }
 
