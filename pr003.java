@@ -113,8 +113,12 @@ class pr003 {
 		System.out.println("\n");
 
 		int i8;
+		char ignore;
 		System.out.println("Для остановки цикла нажмите клавишу \"s\"");
 		for (i8 = 0; (char) System.in.read() != 'S'; i8++)
+			do {
+                                ignore = (char) System.in.read();
+                        } while (ignore != '\n');
 			System.out.println("Интерация № " + i8);
 
 		System.out.println("\n");
@@ -138,6 +142,40 @@ class pr003 {
 		//Вычисление сумм чисел от 1 до 5
 		for (i8 = 1; i8 <= 5; sum += i8++);
 		System.out.println("Сумма чисел равна " + sum);
+
+		//Цикл while
+
+		ch = 'a';
+		while (ch <= 'z') {
+			System.out.print(ch);
+			ch++;
+		}
+		System.out.println();
+
+		System.out.println("\n");
+		//Вычисление целых степеней числа 2
+
+		int e;
+		int result;
+		for (int i9=0; i9 < 10; i9++) {
+			result = 1;
+			e = i9;
+			while(e > 0) {
+				result *=2;
+				e--;
+			}
+			System.out.println("2 в степени " + i9 + " равно " + result);
+		}
+		//Цикл do-while
+		System.out.println("\n");
+		do {
+			System.out.println("Нажмите клавишу, затем ENTER: ");
+			ch = (char) System.in.read();
+			do {
+				ignore = (char) System.in.read();
+			} while (ignore != '\n');
+		} while(ch != 'q');
+
 	}
 }
 
