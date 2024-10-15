@@ -150,7 +150,8 @@ class Arrays {
 		for (int i3=0; i3<sample1.length; i3++)
 			System.out.print(sample1[i3] + " ");
 		System.out.println();
-
+		
+		//
 
 	}
 }
