@@ -153,7 +153,7 @@ class Arrays {
 		
 		System.out.println();
 		//Поиск строки в справочнике
-		String[][] number = {
+		String[][] numbers = {
 			{"Поликлиника", "269-55-55"},
 			{"Энергосбыт", "285-13-07"},
 			{"Управляющая компания", "206-57-93"},
@@ -161,16 +161,16 @@ class Arrays {
 		};
 		int i12;
 
-		if(args.lenght != 1)
+		if(args.length != 1)
 			System.out.println("Задайте один аргумент при запуске программы ");
 		else {
-			for(i12=0; i12<numbers.lenght; i12++) {
+			for(i12=0; i12<numbers.length; i12++) {
 				if(numbers[i12][0].equals(args[0])) {
 					System.out.println(numbers[i12][0] + ": " + numbers[i12][1]);
 				break;
 				}
 			}
-		if(i12 == numbers.lenght)
+		if(i12 == numbers.length)
 			System.out.println("Строка не найдена");
 		}
 
