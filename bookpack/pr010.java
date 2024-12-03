@@ -1,5 +1,6 @@
 package bookpack;
-public class Book {
+/*
+class Book {
 	private String title;
 	private String author;
 	private int pubDate;
@@ -17,6 +18,7 @@ public class Book {
 		System.out.println();
 	}
 }
+*/
 class pr010 {
 	public static void main(String[] args){
 		Book[] books = new Book[5];
